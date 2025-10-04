@@ -1,112 +1,27 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FieldApp — Fieldwork data collection</title>
-  <meta name="description" content="Design custom sampling sheets, log notes, numbers, locations and photos offline, and export CSVs for instant analysis.">
-  <meta property="og:title" content="FieldApp — Fieldwork data collection">
-  <meta property="og:description" content="Design custom sampling sheets, log notes, numbers, locations and photos offline, and export CSVs for instant analysis.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fieldapp.org/">
-  <meta name="theme-color" content="#0b1117">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Crect rx='48' width='256' height='256' fill='%234ea8ff'/%3E%3Cpath d='M48 172l52-84 36 48 20-24 52 60' stroke='%23fff' stroke-width='14' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <a class="brand" href="#">
-        <div class="logo" aria-hidden="true"></div>
-        <strong>FieldApp</strong>
-      </a>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#hierarchy">Structure</a>
-        <a href="#export">Export</a>
-        <a href="#support">Support</a>
-      </nav>
-    </header>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FieldApp — Fieldwork data collection</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="container">
+  <header class="header">
+    <a class="brand" href="index.html"><div class="logo"></div><strong>FieldApp</strong></a>
+    <nav class="nav">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#hierarchy">Structure</a>
+      <a href="index.html#export">Export</a>
+      <a href="index.html#support">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <h1>Fieldwork data collection made easy</h1>
-      <p>Design your own sampling sheets with date/time, text, number, location and photo inputs. Organise work into campaigns and sample sets, and export CSVs for instant analysis.</p>
-      <div class="cta-row">
-        <a class="button primary" href="#features">Explore Features</a>
-        <a class="button ghost" href="#support">Get Support</a>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>Fieldwork data collection made easy</h1>
+    <p>Design your own sampling sheets with date/time, text, number, location and photo inputs. Organise work into campaigns and sample sets, and export CSVs for instant analysis.</p>
+  </section>
 
-    <section id="features" class="grid">
-      <div class="card span-6">
-        <h3>Custom sampling sheets</h3>
-        <p>Create forms that match your project: free‑text notes, numeric fields (with units), date/time, GPS location, and photos.</p>
-      </div>
-      <div class="card span-6">
-        <h3>Works fully offline</h3>
-        <p>No account required, no background syncing. All data stays on your device until you choose to export it.</p>
-      </div>
-      <div class="card span-6">
-        <h3>Camera &amp; photo library</h3>
-        <p>Capture photos in-app or attach from your library. Photos link directly to their sample in the CSV export bundle.</p>
-      </div>
-      <div class="card span-6">
-        <h3>Fast CSV export</h3>
-        <p>Export a whole campaign, a sample set, or a single sample. CSVs are packaged with photos in a single .zip for easy sharing.</p>
-      </div>
-    </section>
-
-    <section id="hierarchy" class="grid">
-      <div class="card span-12">
-        <h3>How FieldApp organizes your work</h3>
-        <p>FieldApp uses a simple hierarchy so large projects stay manageable.</p>
-      </div>
-      <div class="card span-4">
-        <h3>Campaigns</h3>
-        <p>Top‑level projects. Each campaign can contain many sample sets (e.g., a field season, expedition, or study area).</p>
-      </div>
-      <div class="card span-4">
-        <h3>Sample Sets</h3>
-        <p>Group related samples by day, site, or sub‑project. Keep navigation clear as your dataset grows.</p>
-      </div>
-      <div class="card span-4">
-        <h3>Samples</h3>
-        <p>The individual records you collect—notes, numbers, timestamps, GPS coordinates, and multiple photos per sample.</p>
-      </div>
-    </section>
-
-    <section id="export" class="grid">
-      <div class="card span-12">
-        <h3>Export for analysis</h3>
-        <p>Exports are standard CSVs compatible with Excel/Numbers and analysis tools like R or Python. If photos are included, they’re bundled in a .zip with clear links back to each sample.</p>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card span-6">
-        <h3>Privacy &amp; data control</h3>
-        <p>Data lives on your device until you export. No hidden uploads or third‑party storage.</p>
-      </div>
-      <div class="card span-6">
-        <h3>Typical uses</h3>
-        <p>Environmental surveys, glaciology, ecology, geology, archaeology, hydrology, education, lab sampling, and any project that benefits from structured field notes.</p>
-      </div>
-    </section>
-
-    <section id="support" class="grid">
-      <div class="card span-12">
-        <h3>Support</h3>
-        <p>Questions or feedback? Email us at <a href="mailto:support@fieldapp.org">support@fieldapp.org</a>.</p>
-        <p>You can also include a privacy policy link here once published.</p>
-      </div>
-    </section>
-
-    <footer class="footer">
-      © <span id="y"></span> FieldApp. All rights reserved.
-    </footer>
-  </div>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  <footer class="footer">© <span id="y"></span> FieldApp. All rights reserved. · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
