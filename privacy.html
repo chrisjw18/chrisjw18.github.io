@@ -1,24 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FieldApp — Privacy Policy</title>
+  <title>FieldApp Notebook — Privacy Policy</title>
+  <meta name="description" content="How FieldApp Notebook stores fieldwork on your device, handles permissions and keeps you in control of exports and backups.">
+  <meta name="theme-color" content="#071b2a">
+  <link rel="canonical" href="https://fieldapp.org/privacy.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="legal-page">
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
   <div class="container">
     <header class="header">
-      <a class="brand" href="index.html"><div class="logo" aria-hidden="true"></div><strong>FieldApp</strong></a>
-      <nav class="nav">
+      <a class="brand" href="./" aria-label="FieldApp Notebook home"><img src="assets/app-icon.png" width="46" height="46" alt=""><span>FieldApp <strong>Notebook</strong></span></a>
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html#features">Features</a>
-        <a href="index.html#hierarchy">Structure</a>
+        <a href="index.html#preview">See it in action</a>
         <a href="index.html#export">Export</a>
         <a href="index.html#support">Support</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
       </nav>
     </header>
 
+    <main id="policy">
     <section class="hero">
       <h1>Privacy Policy</h1>
       <p>This policy explains how FieldApp handles your data. Updated 25 September 2026 for version 1.2.</p>
@@ -71,10 +78,11 @@
       </div>
     </section>
 
+    </main>
     <footer class="footer">
-      © <span id="y"></span> FieldApp. All rights reserved.
+      <p>© <span id="y">2026</span> FieldApp Notebook</p><div><a href="./">Back to home</a><a href="mailto:support@fieldapp.org">Contact</a></div>
     </footer>
   </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="site.js" defer></script>
 </body>
 </html>
