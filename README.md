@@ -6,9 +6,9 @@ The September 2026 refresh uses the approved terrain artwork, bright app icon, a
 
 ## Release wording
 
-Version 1.2 is awaiting App Store review. The site explicitly identifies the new interface and features as previews; the App Store link currently offers version 1.1. Do not switch to “available now” merely because Apple approves the update: wait for the public release to be verified.
+Version 1.2 is publicly available. Its release was verified on the public UK App Store listing on 26 September 2026, including the updated description and version history. The site now presents the screenshots, film and features as part of the released app.
 
-At launch, update the release notice, hero availability note, version-1.2 section, screenshot/video labels and availability FAQ in `index.html`. Keep screenshots and the privacy policy aligned with the released app. No automatic release-status monitor is installed.
+The release notice, hero availability note, version-1.2 section, screenshot/video labels, search/share descriptions and availability FAQ in `index.html` were updated together. For future releases, verify public availability before changing these claims; approval alone is not public release. Keep screenshots and the privacy policy aligned with the released app. No automatic release-status monitor is installed.
 
 ## Development
 
