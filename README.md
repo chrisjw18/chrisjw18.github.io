@@ -12,4 +12,10 @@ The release notice, hero availability note, version-1.2 section, screenshot/vide
 
 ## Development
 
-Serve this directory using any static HTTP server. There is no build step. Test `index.html` and `privacy.html` at desktop, tablet and phone widths, check local links, and test the native video player before publishing. Keep the existing `CNAME` and privacy-policy substance intact when changing the presentation.
+Serve this directory using any static HTTP server. There is no build step. Test `index.html`, `privacy.html` and all pages under `guides/` at desktop, tablet and phone widths, check local links, and test the native video player when changing its implementation before publishing. Keep the existing `CNAME` and privacy-policy substance intact when changing the presentation.
+
+## Fieldwork guides and search
+
+The homepage links to three practical guides: offline field data collection, custom survey forms, and CSV/media export to Excel. Instructions and screenshots describe public version 1.2; do not advertise unreleased beta features. Each guide has its own title, description, canonical URL, social metadata and links to related workflows. The sitemap lists the homepage, privacy policy and all three guides. Update `lastmod` only for substantive page changes.
+
+Search Console setup is managed separately from visitor analytics; no analytics script or tracking cookie is required for these guides. Account ownership/verification and indexing status must be confirmed in Search Console, not inferred from the presence of the sitemap. Public availability of a page is not proof that Google has indexed or ranked it. Do not publish private account details, search-performance reports or working notes in this repository.

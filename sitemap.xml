@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://fieldapp.org/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://fieldapp.org/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://fieldapp.org/privacy.html</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://fieldapp.org/guides/offline-field-data-collection.html</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://fieldapp.org/guides/create-field-survey-form.html</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://fieldapp.org/guides/export-field-data-to-excel.html</loc><lastmod>2026-09-28</lastmod></url>
 </urlset>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Export Field Data to Excel: CSV, Photos &amp; Audio | FieldApp Notebook</title>
+  <meta name="description" content="Export a FieldApp sample set as CSV or ZIP, open observations in Excel, match photos and audio to records, and keep analysis exports separate from app backups.">
+  <link rel="canonical" href="https://fieldapp.org/guides/export-field-data-to-excel.html">
+  <meta property="og:title" content="How to export field observations to Excel">
+  <meta property="og:description" content="Choose CSV or ZIP, keep attachments matched to records and check your spreadsheet import. A practical guide for FieldApp Notebook 1.2.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fieldapp.org/guides/export-field-data-to-excel.html">
+  <meta property="og:image" content="https://fieldapp.org/assets/app-icon.png">
+  <meta property="og:image:alt" content="FieldApp Notebook app icon">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#071b2a">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header container"><a class="brand" href="../" aria-label="FieldApp Notebook home"><img src="../assets/app-icon.png" width="46" height="46" alt=""><span>FieldApp <strong>Notebook</strong></span></a><nav class="nav" aria-label="Main navigation"><a href="../#features">Features</a><a href="../#guides">Guides</a><a href="../#preview">See it in action</a><a href="../#support">Support</a></nav></header>
+  <main id="main" class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../#guides">Fieldwork guides</a><span aria-hidden="true">/</span><span aria-current="page">Export to Excel</span></nav>
+    <article>
+      <header class="guide-header"><div><p class="eyebrow">Fieldwork guide / 03</p><h1>How to export field observations to Excel</h1><p class="guide-lede">Move from a saved sample set to a spreadsheet you can inspect and analyse. Choose the right export, preserve the original files, and keep photographs and recordings matched to their records.</p><p class="guide-meta">By FieldApp Notebook · For version 1.2 · Updated <time datetime="2026-09-28">28 September 2026</time></p></div><figure><img src="../assets/export-preview.jpg" width="660" height="1434" alt="FieldApp Export Sample Set screen with CSV, CSV plus media and ZIP Archive options"><figcaption>Export choices in the released version 1.2.</figcaption></figure></header>
+      <div class="guide-body">
+        <aside class="guide-callout"><h2>CSV is the spreadsheet format</h2><p>FieldApp exports CSV text files, not native Excel workbooks. Excel and Numbers can read CSV, and it can also be used in R or Python. Photographs and audio remain separate files rather than being embedded inside spreadsheet cells.</p></aside>
+        <nav class="guide-toc" aria-label="On this page"><h2>In this guide</h2><ol><li><a href="#choose">Choose an export format</a></li><li><a href="#export">Export one sample set</a></li><li><a href="#excel">Open and check the CSV</a></li><li><a href="#attachments">Match attachments to records</a></li><li><a href="#preserve">Preserve originals and backups</a></li></ol></nav>
+        <h2 id="choose">1. Choose an export format</h2>
+        <div class="guide-table-wrap"><table class="guide-table"><caption>Formats in the sample-set export screen</caption><thead><tr><th scope="col">Format</th><th scope="col">What you receive</th><th scope="col">Use it when</th></tr></thead><tbody>
+          <tr><th scope="row">CSV</th><td>One spreadsheet for this sample set. Attachments are listed but their files are not included.</td><td>You only need tabular observations.</td></tr>
+          <tr><th scope="row">CSV + Media</th><td>The spreadsheet plus separate photo and audio files.</td><td>Your chosen sharing destination can receive multiple files.</td></tr>
+          <tr><th scope="row">ZIP Archive</th><td>One archive containing the CSV, photographs and recordings.</td><td>You want to transfer the set and its media together.</td></tr>
+        </tbody></table></div>
+        <p>For a first export with attachments, ZIP is a straightforward choice: it keeps the package together during transfer. Unzip it before working with the CSV and media folders.</p>
+        <h2 id="export">2. Export one sample set</h2>
+        <ol><li>Open the campaign and the sample set containing the saved observations.</li><li>Choose its <strong>Export Sample Set</strong> control, shown with a share icon.</li><li>Select CSV, CSV + Media or ZIP Archive, then tap <strong>Export</strong>.</li><li>Use the system share sheet to save or send the result. Save to a local Files location if you are offline; email and cloud destinations may need a connection.</li></ol>
+        <p>The set must contain saved samples. This workflow produces one CSV containing that set's records; exporting a selection from the global Samples browser uses a different layout, with individual CSVs per selected sample.</p>
+        <h2 id="excel">3. Open and check the CSV</h2>
+        <p>Keep an untouched copy of the export. If it is a ZIP, extract it, then open the CSV in Excel. If columns, dates or identifiers are interpreted incorrectly, use Excel's text/CSV import controls instead of relying on automatic opening.</p>
+        <p>In desktop versions that provide it, choose <strong>Data → From Text/CSV</strong>. Preview the columns, use the comma delimiter, and set identifier columns to Text before loading when leading zeros matter. Menus vary by Excel version and platform; see <a href="https://support.microsoft.com/en-us/excel/get-started/import-or-export-text-txt-or-csv-files">Microsoft's CSV import instructions</a>.</p>
+        <p>A sample-set CSV includes context columns such as <code>campaign</code>, <code>sample_set_name</code>, <code>sample_name</code> and <code>timestamp</code>, followed by the form's exported fields. Location fields produce latitude and longitude columns.</p>
+        <ul><li>Compare the number of data rows, excluding the header, with the saved samples in the set.</li><li>Check a familiar record's name, date and numeric measurements.</li><li>Confirm that identifiers such as <code>001</code> have not become <code>1</code>.</li><li>Inspect missing values and check your units before analysing or combining sets.</li></ul>
+        <p>If you add formatting, formulas or extra sheets, save the working analysis as an Excel workbook separately from the original CSV. Editing that spreadsheet does not update the records stored in FieldApp.</p>
+        <h2 id="attachments">4. Match attachments to records</h2>
+        <p>The CSV's photo and audio fields contain file references. In a ZIP export, these point into the <code>photos/</code> and <code>audio/</code> folders. The filenames combine a readable sample-set name, sample name, field name and attachment number; characters are cleaned for file compatibility and collisions can add a suffix.</p>
+        <p>For example, a fictional reference might look like <code>photos/Site_A_Point_001_Site_photograph_01.jpg</code>. Use the actual reference in your CSV as the match, rather than reconstructing a filename yourself. These are file references, not a promise of clickable Excel hyperlinks.</p>
+        <p>Keep the extracted folder structure intact. Renaming or moving a media file without updating your analysis can break that association. A CSV-only export lists attachments but cannot transfer the images or recordings by itself.</p>
+        <h2 id="preserve">5. Preserve originals and backups</h2>
+        <p>Keep the original export beside your working spreadsheet, ideally with a date and a short note about what it contains. Check the files before relying on them as a handover to a colleague. Review notes, audio, photographs and precise coordinates before sharing potentially sensitive fieldwork.</p>
+        <aside class="guide-callout warning"><h2>Keep a restorable app backup too</h2><p>A sample-set ZIP is an analysis export, not a complete FieldApp backup. Use Campaigns → Data Tools → Backup &amp; Restore → Create Complete Backup for the app's restore workflow, and keep a separate copy off the collection device when practical.</p></aside>
+        <section class="guide-related" aria-labelledby="related-title"><h2 id="related-title">Continue your workflow</h2><ul><li><a href="create-field-survey-form.html">Design fields that become useful spreadsheet columns</a></li><li><a href="offline-field-data-collection.html">Check your collection workflow before going offline</a></li></ul></section>
+        <aside class="guide-callout guide-cta"><h2>Collect in the field. Analyse in your own tools.</h2><p>Explore FieldApp Notebook's custom forms and export options for iPhone and iPad.</p><a class="button primary" href="https://apps.apple.com/gb/app/id6753550214">View FieldApp on the App Store <span aria-hidden="true">↗</span></a></aside>
+      </div>
+    </article>
+  </main>
+  <footer class="footer container"><p>© <span id="y">2026</span> FieldApp Notebook</p><div><a href="../#guides">Fieldwork guides</a><a href="../privacy.html">Privacy policy</a><a href="mailto:support@fieldapp.org">Contact</a></div><p class="footer-note">Built for observations, not distractions.</p></footer>
+  <script src="../site.js" defer></script>
+</body>
+</html>

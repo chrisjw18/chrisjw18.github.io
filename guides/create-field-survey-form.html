@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create a Field Survey Form on iPhone &amp; iPad | FieldApp Notebook</title>
+  <meta name="description" content="Build a repeatable field survey form in FieldApp Notebook. Choose text, number, photo, audio and location fields, set units, reuse templates and test an export.">
+  <link rel="canonical" href="https://fieldapp.org/guides/create-field-survey-form.html">
+  <meta property="og:title" content="How to create a field survey form in FieldApp Notebook">
+  <meta property="og:description" content="A worked example for choosing field types, recording units, reusing templates and checking your form before fieldwork.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fieldapp.org/guides/create-field-survey-form.html">
+  <meta property="og:image" content="https://fieldapp.org/assets/app-icon.png">
+  <meta property="og:image:alt" content="FieldApp Notebook app icon">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#071b2a">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header container"><a class="brand" href="../" aria-label="FieldApp Notebook home"><img src="../assets/app-icon.png" width="46" height="46" alt=""><span>FieldApp <strong>Notebook</strong></span></a><nav class="nav" aria-label="Main navigation"><a href="../#features">Features</a><a href="../#guides">Guides</a><a href="../#preview">See it in action</a><a href="../#support">Support</a></nav></header>
+  <main id="main" class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../#guides">Fieldwork guides</a><span aria-hidden="true">/</span><span aria-current="page">Survey forms</span></nav>
+    <article>
+      <header class="guide-header"><div><p class="eyebrow">Fieldwork guide / 02</p><h1>How to create a field survey form</h1><p class="guide-lede">Start with the record you need at the end of the project. Then build a form that captures those values consistently, with photographs, audio and location beside the measurements.</p><p class="guide-meta">By FieldApp Notebook · For version 1.2 · Updated <time datetime="2026-09-28">28 September 2026</time></p></div><figure><img src="../assets/forms-preview.jpg" width="660" height="1434" alt="FieldApp sample form with text, a vegetation measurement and an audio recording"><figcaption>Version 1.2 form preview using example data.</figcaption></figure></header>
+      <div class="guide-body">
+        <nav class="guide-toc" aria-label="On this page"><h2>In this guide</h2><ol><li><a href="#structure">Choose the record structure</a></li><li><a href="#fields">Add fields and units</a></li><li><a href="#example">Try an example survey form</a></li><li><a href="#reuse">Test and reuse the form</a></li></ol></nav>
+        <h2 id="structure">1. Choose the record structure</h2>
+        <p>FieldApp organises work as <strong>Campaign → Sample set → Sample</strong>. Use a campaign for the overall project, a sample set for a related group of records, and a sample for each observation you want to become a row in that set's exported spreadsheet.</p>
+        <p>For example, a campaign could be a teaching survey, its sample sets could be separate site visits, and each sample could be one observation point. Decide this with the people collecting the data so that a “sample” means the same thing throughout the project.</p>
+        <p>From Campaigns, create or open a campaign and choose <strong>New Sample Set</strong>. Give the set a meaningful name, create it and open it. The form's custom fields are configured for this sample set; they appear on its samples.</p>
+        <h2 id="fields">2. Add fields and units</h2>
+        <ol><li>Open <strong>Configure Fields</strong> from the sample set.</li><li>Choose a <strong>Field type</strong> and enter a clear field name.</li><li>For a Number field, enter units where appropriate, such as <code>cm</code>.</li><li>Tap <strong>Add Field</strong> and repeat for the information you need.</li><li>Use <strong>Edit</strong> to reorder the fields, then choose <strong>Save &amp; Close</strong>.</li></ol>
+        <p>Available types are Text, Long Text, Number, Boolean, Date, Photo, Audio Recording and Location. Samples also have their standard name and Recorded timestamp, so you do not need to create duplicate fields for those unless your workflow needs a distinct value.</p>
+        <h2 id="example">3. Try an example survey form</h2>
+        <p>This fictional observation-point form illustrates the field types. Adapt it to your own protocol; it is not a validated ecological sampling method.</p>
+        <div class="guide-table-wrap"><table class="guide-table"><caption>Example custom fields for a simple site observation</caption><thead><tr><th scope="col">Field name</th><th scope="col">Type</th><th scope="col">What to record</th></tr></thead><tbody>
+          <tr><th scope="row">Site code</th><td>Text</td><td>An identifier such as A01; use Text when leading zeros or letters matter.</td></tr>
+          <tr><th scope="row">Vegetation height</th><td>Number</td><td>A numeric value, with cm entered as the field's units.</td></tr>
+          <tr><th scope="row">Observer notes</th><td>Long Text</td><td>Conditions, uncertainty or anything unusual about this observation.</td></tr>
+          <tr><th scope="row">Site photograph</th><td>Photo</td><td>A photograph that helps interpret the measurement.</td></tr>
+          <tr><th scope="row">Spoken notes</th><td>Audio Recording</td><td>A short recording of context that is inconvenient to type.</td></tr>
+          <tr><th scope="row">Observation location</th><td>Location</td><td>The captured coordinates; check that a location was actually obtained.</td></tr>
+        </tbody></table></div>
+        <p>Use the sample's name for the observation identifier, for example <code>Point_001</code>. Keep labels concise and specific: “Height” is less clear than “Vegetation height”, while putting several measurements into one free-text field makes later analysis harder.</p>
+        <p>Set a convention for missing or uncertain measurements. Do not use zero as a stand-in for “not measured” when zero is a valid observation. Use notes to explain the reason, and check how your convention appears in an export.</p>
+        <h2 id="reuse">4. Test and reuse the form</h2>
+        <p>Create two or three practice samples. Include a decimal number, a long note, an attachment and a deliberately unmeasured value. Save and reopen them, then <a href="export-field-data-to-excel.html">export the sample set</a> and check that the columns and media references mean what you intended.</p>
+        <p>When the form works, return to Configure Fields and choose <strong>Save Fields as Template</strong>. In another sample set's field configuration, <strong>Apply a Template</strong> lets you reuse a saved field layout. Check the resulting field list before collecting records. Templates reuse the structure; they are not a way to share live records or synchronise devices.</p>
+        <aside class="guide-callout warning"><h2>Be careful when changing a used form</h2><p>Deleting a custom field also deletes its saved values from that sample set. Make a complete backup before restructuring forms that already contain fieldwork. Review the confirmation carefully; cancelling a sample edit is not a substitute for protecting changes made in field configuration.</p></aside>
+        <p>If several people are collecting data, agree the same names, units and record structure before starting. A consistent form helps, but the app does not replace observer training, a field protocol or a review of the exported dataset.</p>
+        <section class="guide-related" aria-labelledby="related-title"><h2 id="related-title">Continue your workflow</h2><ul><li><a href="offline-field-data-collection.html">Prepare and test an offline fieldwork workflow</a></li><li><a href="export-field-data-to-excel.html">Check a CSV and its attachments in an export</a></li></ul></section>
+        <aside class="guide-callout guide-cta"><h2>Build a form around your fieldwork</h2><p>Explore FieldApp Notebook for iPhone and iPad, with local records and spreadsheet-ready exports.</p><a class="button primary" href="https://apps.apple.com/gb/app/id6753550214">View FieldApp on the App Store <span aria-hidden="true">↗</span></a></aside>
+      </div>
+    </article>
+  </main>
+  <footer class="footer container"><p>© <span id="y">2026</span> FieldApp Notebook</p><div><a href="../#guides">Fieldwork guides</a><a href="../privacy.html">Privacy policy</a><a href="mailto:support@fieldapp.org">Contact</a></div><p class="footer-note">Built for observations, not distractions.</p></footer>
+  <script src="../site.js" defer></script>
+</body>
+</html>
